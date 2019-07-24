@@ -1,0 +1,273 @@
+@media only screen and (max-width: 3000px){
+	body{
+		margin: 0;
+		background: #272727;
+		font-family: sans-serif;
+	}
+	form{
+		background: #464646;
+	}
+	#nombres, #usuario, #correo, #password, #confirmar{
+		position: absolute;
+		left: 25%;
+		width: 50%;
+		height: 10%;
+	}
+	#form1{
+		position: absolute;
+		height: 65%;
+		width: 40%;
+		top: 20%;
+		left: 30%;
+		display: none;
+	}
+	#form2{
+		position: absolute;
+		top: 20%;
+		left: 30%;
+		height: 40%;
+		width: 40%;
+		display: block;
+	}
+	input{
+		background: #272727;
+		color: white;
+		border: none;
+		height: 7.5%;
+		position: absolute;
+		width: 40%;
+	}
+	#entrar{
+		height: 15%;
+		width: 30%;
+		color: white;
+		position: absolute;
+		left: 10%;
+		bottom: -20%;
+		background: #003D99;
+	}
+	#borrar{
+		height: 15%;
+		width: 30%;
+		color: white;
+		position: absolute;
+		right: 10%;
+		bottom: -20%;
+		background: #003D99;
+	}
+	#entrar:hover, #borrar:hover{
+		background: #272727;
+		border: 3px solid #003D99;
+	}
+	#registro, #iniciar{
+		color: lightgray;
+		text-align: center;
+		padding: 2% 0 0 0;
+	}
+	#registro{
+		position: absolute;
+		left: 0%;
+		top: 0%;
+		height: 100%;
+		width: 50%;
+		border-right: 1px solid white;
+	}
+	#iniciar{
+		position: absolute;
+		right: 0%;
+		top: 0%;
+		height: 100%;
+		width: 50%;
+	}
+	#iniciar:hover, #registro:hover{
+		background: #003D99;
+	}
+	#iniciar:hover{
+		border-top-right-radius: 15px;
+	}
+	#registro:hover{
+		border-top-left-radius: 15px;
+	}
+	#contenedor{
+		position: absolute;
+		top: 12.5%;
+		left: 30%;
+		height: 7.5%;
+		width: 40%;
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+		background: #2A2A2A;
+	}
+	img{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		height: 10%;
+		width: 25%;
+		border: 1px solid white;
+	}
+	#user, #pass{
+		position: absolute;
+		left: 20%;
+		height: 15%;
+		width: 60%;
+	}
+	#user{
+		position: absolute;
+		top: 15%;
+
+	}
+	#pass{
+		position: absolute;
+		top: 40%;
+	}
+	#log{
+		background: #003D99;
+		position: absolute;
+		bottom: 10%;
+		left: 35%;
+		color: white;
+		width: 30%;
+		height: 20%;
+		border-radius: 20px;
+	}
+	#log:hover{
+		background: #272727;
+	}
+}
+@media only screen and (max-width: 1400px){
+	input{
+		width: 35%;
+	}
+}
+@media only screen and (max-width: 950px){
+	#contenedor{
+		position: absolute;
+		left: 20%;
+		width: 60%;
+	}
+	#form1{
+		position: absolute;
+		height: 80%;
+		width: 60%;
+		top: 20%;
+		left: 20%;
+	}
+	#form2{
+		position: absolute;
+		top: 20%;
+		left: 20%;
+		height: 60%;
+		width: 60%;
+	}
+}
+@media only screen and (max-width: 650px){
+	#contenedor{
+		position: absolute;
+		left: 10%;
+		width: 80%;
+	}
+	#form1{
+		position: absolute;
+		height: 80%;
+		width: 80%;
+		top: 20%;
+		left: 10%;
+	}
+	#form2{
+		position: absolute;
+		top: 20%;
+		left: 10%;
+		height: 70%;
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 450px){
+	img{
+		width: 100%;
+	}
+	#contenedor{
+		position: absolute;
+		left: 0%;
+		width: 100%;
+		border-radius: 0px;
+	}
+	#iniciar:hover{
+		border-top-right-radius: 0px;
+	}
+	#registro:hover{
+		border-top-left-radius: 0px;
+	}
+	#form1{
+		position: absolute;
+		height: 80%;
+		width: 100%;
+		top: 20%;
+		left: 0%;
+	}
+	#form2{
+		position: absolute;
+		top: 20%;
+		left: 0%;
+		height: 60%;
+		width: 100%;
+	}
+	#nombres, #usuario, #correo, #password, #apellidos, #confirmar{
+		position: absolute;
+		left: 5%;
+		width: 90%;
+	}
+	#nombres{
+		position: absolute;
+		top: 5%;
+	}
+	#usuario{
+		position: absolute;
+		top: 20%;
+	}
+	#correo{
+		position: absolute;
+		top: 35%;
+	}
+	#password{
+		position: absolute;
+		top: 50%;
+	}
+	#confirmar{
+		position: absolute;
+		top: 66%;
+	}
+	input{
+		width: 90%;
+	}
+	#entrar{
+		height: 10%;
+		width: 30%;
+		border-radius: 0px;
+		position: absolute;
+		left: 10%;
+		bottom: 1%;
+	}
+	#borrar{
+		height: 10%;
+		width: 30%;
+		border-radius: 0px;
+		position: absolute;
+		right: 10%;
+		bottom: 1%;
+	}
+	#user, #pass{
+		position: absolute;
+		left: 20%;
+		height: 12.5%;
+		width: 60%;
+	}
+	#log{
+		width: 30%;
+		height: 15%;
+		border-radius: 20px;
+		position: absolute;
+		bottom: 15%;
+	}
+
+}
