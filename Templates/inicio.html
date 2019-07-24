@@ -1,0 +1,22 @@
+{% if usuario %}
+<link rel="stylesheet" type="text/css" href="../static/home.css">
+<link rel="stylesheet" type="text/css" href="../static/imagenes.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<header>
+	<h3>Bienvenido {{ usuario }}</h3>
+	<a href="/" id="inicio">Inicio</a>
+	<a href="/imagenes" id="imagenes">Imágenes</a>
+	<a href="/publicar" id="publicar">Publicar</a>
+	<a href="/salir" id="cerrar">Cerrar sesión</a>
+	<form>
+		<input type="input" name="busqueda" placeholder=" Buscar..." id="busqueda">
+		<button type="submit"><img src=""></button>
+	</form>
+</header>
+<article>
+	{% block article %}{% endblock %}
+</article>
+<footer>&copy;Todos los derechos reservados</footer>
+{% else %}
+<a href="{{ url_for('home') }}">Inicio</a> 
+{% endif %}

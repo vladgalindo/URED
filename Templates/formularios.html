@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inicio</title>
+	<link rel="stylesheet" type="text/css" href="../static/estilo.css">
+	<script type="text/javascript">
+
+		function toggle() {
+			let registro = document.getElementById('form1');
+			let sesion = document.getElementById('form2');
+			if (sesion.style.display = 'none'){
+				sesion.style.display = 'block';
+				registro.style.display = 'none';
+			}
+		}
+		function toggle2() {
+			let registro = document.getElementById('form1');
+			let sesion = document.getElementById('form2');
+			if (registro.style.display = 'none') {
+				registro.style.display = 'block';
+				sesion.style.display = 'none';
+			}
+		}
+	</script>
+</head>
+<body>
+	<header><img src=""></header>
+	<div id="contenedor">
+		<div id="registro" onclick="toggle2()">Registrarse</div>
+		<div id="iniciar" onclick="toggle()">Iniciar sesión</div>
+	</div>
+	<form method="POST" action="/registrarse" id="form1">
+		<br>
+		<input type="text" name="nombre" placeholder=" Nombre completo" id="nombres"><br><br><br>
+		<input type="input" name="usuario" placeholder=" Usuario" id="usuario"><br><br><br>
+		<input type="input" name="correo" placeholder=" Correo" id="correo"><br><br><br>
+		<input type="password" name="password" placeholder=" Contraseña" id="password"><br><br><br>
+		<input type="password" name="confirmar" placeholder=" Confirmar contraseña" id="confirmar"><br><br>
+		<input type="submit" name="" value="Registrarse" id="entrar">
+		<input type="reset" name="" value="Limpiar" id="borrar">
+	</form>
+	<form method="POST" action="/validar" id="form2">
+		<input type="input" name="usuario" placeholder=" Usuario" id="user"> <br><br>
+		<input type="password" name="password" placeholder=" Contraseña" id="pass"> <br><br>
+		<input type="submit" name="" value="Iniciar sesión" id="log">
+	</form>
+</body>
+</html>

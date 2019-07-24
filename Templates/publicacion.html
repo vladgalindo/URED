@@ -1,0 +1,9 @@
+{% extends 'inicio.html' %}
+{% block article %}
+	{% for ruta, nombre in rango[::1] %}
+				
+		<video src={{ruta}}/{{nombre}} id="archivo" controls=""></video>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				
+	{% endfor %}
+{% endblock %}

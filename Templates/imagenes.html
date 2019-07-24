@@ -1,0 +1,9 @@
+{% extends 'inicio.html' %}
+{% block article %}
+	<br><br><br><br>
+	{% for ruta, nombre in rango[::1] %}
+		
+		<img src={{ruta}}/{{nombre}} id="imagen">
+	
+	{% endfor %}
+{% endblock %}

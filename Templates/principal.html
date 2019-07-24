@@ -1,0 +1,9 @@
+{% extends 'inicio.html' %}
+{% block article %}
+	<br><br><br><br>
+	{% for ID, ruta, nombre in rango[::1] %}
+			<a href="{{ID}}">
+				<video src={{ruta}}/{{nombre}} id="video" poster=""></video>
+			</a>
+	{% endfor %}
+{% endblock %}
