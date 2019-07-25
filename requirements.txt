@@ -24,6 +24,7 @@ macholib==1.11
 MarkupSafe==1.0
 monotonic==1.5
 pefile==2018.8.8
+pip==19.2.1
 pygame==1.9.6
 Pygments==2.2.0
 PyInstaller==3.4
