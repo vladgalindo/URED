@@ -25,7 +25,6 @@ Pygments==2.2.0
 PyInstaller==3.4
 PyMySQL==0.9.3
 PyPDF2==1.26.0
-pypiwin32==223
 python-engineio==2.3.2
 python-socketio==2.0.0
 pytz==2018.5
