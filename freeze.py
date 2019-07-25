@@ -6,7 +6,7 @@ freezer = Freezer(app)
 @freezer.register_generator
 def home():
     # URLs as strings
-    yield '/home'
+    yield '/'
 
 # @freezer.register_generator
 # def registrarse():

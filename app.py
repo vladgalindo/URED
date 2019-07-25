@@ -9,7 +9,7 @@ clave = os.urandom(32)
 app = Flask(__name__)
 app.secret_key = clave
 
-@app.route('/home')
+@app.route('/')
 def home():
 	return render_template('formularios.html')
 
