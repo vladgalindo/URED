@@ -100,6 +100,25 @@ def metodo():
 		conexion.close()
 		return redirect('/')	
 
+@app.route('/publicacion2', methods = ['GET', 'POST'])
+def metodo2():
+	usuario = session.get('usuario', None)
+	archivo = request.files['archivo']
+	UPLOAD_FOLDER = 'static/fotos/'+ str(usuario) 
+	app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+	if request.method == 'POST':
+		tipo = 'foto'
+		ruta = 'static/fotos/'+ str(usuario) 
+		conexion = sqlite3.connect("uranium.db")
+		cursor = conexion.cursor()
+		arch = archivo.filename
+		filename = secure_filename(archivo.filename)
+		archivo.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+		cursor.execute('''INSERT INTO imagenes ( nombre, usuario, ruta) VALUES (?,?,?)''', [arch, usuario, ruta])
+		conexion.commit()
+		conexion.close()
+		return redirect('/imagenes')
+	
 @app.route('/', methods = ['GET', 'POST'])
 def inicio():
 	usuario = session.get('usuario', None)
