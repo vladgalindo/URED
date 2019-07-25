@@ -59,4 +59,4 @@ def salir():
     yield '/salir/'
 
 if __name__ == '__main__':
-	freezer.freeze(debug=True)
+	freezer.freeze()
